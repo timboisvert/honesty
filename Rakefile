@@ -1,13 +1,13 @@
 require 'rubygems'
-require 'rake/gempackagetask'
+require 'rubygems/package_task'
 require 'rake/testtask'
 
-PLUGIN = "acts_as_commentable"
-GEM = "acts_as_commentable"
+PLUGIN = "honesty"
+GEM = "honesty"
 GEM_VERSION = "3.0.1"
-EMAIL = "unknown@juixe.com"
-HOMEPAGE = "http://www.juixe.com/techknow/index.php/2006/06/18/acts-as-commentable-plugin/"
-SUMMARY = "Plugin/gem that provides comment functionality"
+EMAIL = "boisvert@gmail.com"
+HOMEPAGE = "http://github.com/timboisvert/honesty"
+SUMMARY = "Store and track user activities and system events in a human-readable, easily-searchable format"
 
 spec = Gem::Specification.new do |s|
   s.name = GEM
@@ -17,12 +17,9 @@ spec = Gem::Specification.new do |s|
   s.extra_rdoc_files = ["README.rdoc", "MIT-LICENSE"]
   s.summary = SUMMARY
   s.description = s.summary
-  s.author = 'Cosmin Radoi, Jack Dempsey, Xelipe, Chris Eppstein'
+  s.author = 'Tim Boisvert'
   s.email = EMAIL
   s.homepage = HOMEPAGE
-
-  # Uncomment this to add a dependency
-  # s.add_dependency "foo"
 
   s.require_path = 'lib'
   s.autorequire = GEM
@@ -30,7 +27,7 @@ spec = Gem::Specification.new do |s|
 end
 
 
-Rake::GemPackageTask.new(spec) do |pkg|
+Gem::PackageTask.new(spec) do |pkg|
   pkg.gem_spec = spec
 end
 
@@ -46,7 +43,7 @@ task :gemspec do
   end
 end
 
-desc 'Test the acts_as_commentable plugin.'
+desc 'Test the honesty plugin.'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.pattern = 'test/**/*_test.rb'

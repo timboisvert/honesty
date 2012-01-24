@@ -1,10 +1,3 @@
-class Post < ActiveRecord::Base
-  acts_as_commentable
-end
-
-class User < ActiveRecord::Base
-end
-
-class Wall < ActiveRecord::Base
-  acts_as_commentable :public, :private
+class Shoe < ActiveRecord::Base
+  honesty
 end
