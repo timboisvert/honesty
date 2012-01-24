@@ -40,6 +40,8 @@ Parameters:
 * Agent - the actor, so to speak.
 * Action - the action taking place.
 
+If you want to explicitly denote the context, pass all three parameters
+
   shoe = Shoe.create
   shoe.fact("Shoe", "Tim Boisvert", "Created Adidas Superstar II")
 
