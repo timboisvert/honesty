@@ -9,29 +9,29 @@ a human-readable, easily-searchable format.
 
 Add Honesty to your Gemfile:
 
-	gem 'honesty'
+  gem 'honesty'
 
 === Generate the model
 
 Rails 3: 
 
-	rails g honesty
+  rails g honesty
 
 Rails 2: 
 
-	script/generate honesty
+  script/generate honesty
 
 Migrate:
 
-	rake db:migrate
+  rake db:migrate
 
 == Usage
  
 === Use Honesty in your ActiveRecord model:
  
- 	class Shoe < ActiveRecord::Base
- 		honesty
- 	end
+  class Shoe < ActiveRecord::Base
+    honesty
+  end
 
 === Add a fact to a model instance:
  
@@ -40,18 +40,18 @@ Parameters:
 * Agent - the actor, so to speak.
 * Action - the action taking place.
 
-	shoe = Shoe.create
-	shoe.fact("Shoe", "Tim Boisvert", "Created Adidas Superstar II")
+  shoe = Shoe.create
+  shoe.fact("Shoe", "Tim Boisvert", "Created Adidas Superstar II")
 
 If you want to short-cut the fact and use the object's class name as the context, just pass in the agent and the action
 
-	shoe = Shoe.create
-	shoe.fact("Tim Boisvert", "Created Adidas Superstar II")
+  shoe = Shoe.create
+  shoe.fact("Tim Boisvert", "Created Adidas Superstar II")
 
 === Get facts
  
-	shoe = Shoe.find(1)
-	facts = shoe.facts.all
+  shoe = Shoe.find(1)
+  facts = shoe.facts.all
 
 == Credits
 
