@@ -1,7 +1,7 @@
 = Honesty
 
-Honesty allows developers to store and track user activities and system events in 
-a human-readable, easily-searchable format.
+Honesty is a Rails plugin that allows developers to store and track user activities 
+and system events in a human-readable, easily-searchable format.
 
 == Installation
 
