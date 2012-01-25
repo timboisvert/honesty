@@ -57,7 +57,7 @@ If you want to short-cut the fact and use the object's class name as the context
 
 == Credits
 
-This plugin is heavily influenced by Acts As Taggable. Thanks to Jack Dempsey et al.
+This plugin is heavily influenced by <a href="https://github.com/jackdempsey/acts_as_commentable">acts_as_commentable</a>. Thanks to Jack Dempsey et al.
 
 == Contributors
 
