@@ -1,4 +1,4 @@
-<img src="https://raw.github.com/timboisvert/honesty/master/honesty.png" />
+![Honesty logo](https://raw.github.com/timboisvert/honesty/master/honesty.png)
 
 = Honesty
 
