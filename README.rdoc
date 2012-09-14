@@ -1,5 +1,3 @@
-![Honesty logo](https://raw.github.com/timboisvert/honesty/master/honesty.png)
-
 = Honesty
 
 Honesty is a Rails plugin that allows developers to store and track user activities 
